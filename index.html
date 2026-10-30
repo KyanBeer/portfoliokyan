@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyan Beer - Portfolio | CMD Avans Hogeschool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%238B9A6E'/><text x='12' y='16' font-size='12' text-anchor='middle' fill='%23FFFFFF' font-family='sans-serif' font-weight='bold'>K</text></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       WINDOWS XP DESKTOP ACHTERGROND
+       ======================================================================== -->
+  <div class="xp-desktop" id="xpDesktop">
+    
+    <!-- Heuvels achtergrondeffect -->
+    <div class="desktop-wallpaper-hills"></div>
+
+    <!-- Desktop Iconen op Bureaublad -->
+    <div class="desktop-icons">
+      <button class="desktop-icon-btn" onclick="scrollToSection('hero')">
+        <svg viewBox="0 0 48 48">
+          <rect x="6" y="8" width="36" height="26" rx="3" fill="#E8EEF7" stroke="#3A6EA5" stroke-width="2"/>
+          <path d="M6 14h36" stroke="#3A6EA5" stroke-width="2"/>
+          <rect x="18" y="34" width="12" height="6" fill="#A4C6F0" stroke="#3A6EA5" stroke-width="1.5"/>
+          <rect x="12" y="40" width="24" height="3" rx="1.5" fill="#3A6EA5"/>
+        </svg>
+        <span>Deze Computer</span>
+      </button>
+
+      <button class="desktop-icon-btn" onclick="scrollToSection('project-zelda')">
+        <svg viewBox="0 0 48 48">
+          <rect x="8" y="6" width="32" height="36" rx="2" fill="#001E36" stroke="#31A8FF" stroke-width="2"/>
+          <text x="24" y="28" fill="#31A8FF" font-size="14" font-weight="bold" text-anchor="middle" font-family="sans-serif">Ps</text>
+          <text x="24" y="36" fill="#FFFFFF" font-size="8" text-anchor="middle" font-family="sans-serif">Zelda.psd</text>
+        </svg>
+        <span>Zelda_Shoot</span>
+      </button>
+
+      <button class="desktop-icon-btn" onclick="scrollToSection('project-controller')">
+        <svg viewBox="0 0 48 48">
+          <rect x="8" y="6" width="32" height="36" rx="2" fill="#00979D" stroke="#00666B" stroke-width="2"/>
+          <circle cx="20" cy="24" r="5" fill="#FFFFFF"/>
+          <circle cx="28" cy="24" r="5" fill="#FFFFFF"/>
+          <text x="20" y="26" fill="#00979D" font-size="8" font-weight="bold" text-anchor="middle" font-family="sans-serif">-</text>
+          <text x="28" y="26" fill="#00979D" font-size="8" font-weight="bold" text-anchor="middle" font-family="sans-serif">+</text>
+        </svg>
+        <span>Grizzly_Arcade</span>
+      </button>
+
+      <button class="desktop-icon-btn" onclick="scrollToSection('project-uxd')">
+        <svg viewBox="0 0 48 48">
+          <rect x="8" y="6" width="32" height="36" rx="2" fill="#1E1E1E" stroke="#F24E1E" stroke-width="2"/>
+          <circle cx="24" cy="16" r="4" fill="#F24E1E"/>
+          <circle cx="24" cy="26" r="4" fill="#0ACF83"/>
+          <circle cx="24" cy="36" r="4" fill="#1ABCFE"/>
+        </svg>
+        <span>Figma_UXD</span>
+      </button>
+
+      <button class="desktop-icon-btn" onclick="showXpDialog('Prullenbak', 'De prullenbak is leeg. Alle ontwerpen en prototypes van Kyan zijn met zorg bewaard!')">
+        <svg viewBox="0 0 48 48">
+          <path d="M12 14h24l-3 26H15L12 14z" fill="#D2E3F9" stroke="#3A6EA5" stroke-width="2"/>
+          <path d="M10 14h28M18 10h12v4H18z" fill="#A4C6F0" stroke="#3A6EA5" stroke-width="2"/>
+        </svg>
+        <span>Prullenbak</span>
+      </button>
+    </div>
+
+    <!-- ======================================================================
+         WINDOWS XP CHROME VENSTER
+         ====================================================================== -->
+    <div class="xp-window-container" id="xpWindow">
+      
+      <!-- XP Titelbalk -->
+      <div class="xp-titlebar">
+        <div class="xp-title-left">
+          <!-- Retro Google Chrome Ball Icoon -->
+          <svg class="chrome-ball-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="11" fill="#FFFFFF"/>
+            <path d="M12 2a10 10 0 0 0-8.66 5l4.33 7.5L12 7h9.54A10 10 0 0 0 12 2z" fill="#EA4335"/>
+            <path d="M21.54 7H12l-4.33 7.5L3.34 7A10 10 0 0 0 12 22l4.33-7.5 4.33-7.5c.57 0 .88 0 .88 0z" fill="#FBBC05"/>
+            <path d="M12 22a10 10 0 0 0 9.54-7h-8.66l-4.33 7.5c1.1.33 2.26.5 3.45.5z" fill="#34A853"/>
+            <circle cx="12" cy="12" r="4.5" fill="#FFFFFF"/>
+            <circle cx="12" cy="12" r="3.5" fill="#4285F4"/>
+          </svg>
+          <span id="windowTitleText">Kyan Beer - Portfolio (CMD Avans) - Google Chrome</span>
+        </div>
+        
+        <!-- Vensterbediening (Min, Max, Close) -->
+        <div class="xp-window-controls">
+          <button class="xp-btn-control" title="Minimaliseren" onclick="toggleMinimize()">
+            <svg viewBox="0 0 10 10"><rect x="1" y="8" width="8" height="2"/></svg>
+          </button>
+          <button class="xp-btn-control" title="Maximaliseren / Herstellen" onclick="toggleMaximize()">
+            <svg viewBox="0 0 10 10"><rect x="1" y="1" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+          <button class="xp-btn-control xp-btn-close" title="Sluiten" onclick="handleCloseWindow()">
+            <svg viewBox="0 0 10 10"><path d="M1 1l8 8M9 1L1 9" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Google Chrome Tabbladen Balk (Windows XP Stijl) -->
+      <div class="chrome-tabstrip-wrapper">
+        <div class="chrome-tab is-active" id="tabMain" onclick="switchChromeTab('main')">
+          <span class="chrome-tab-icon">🌐</span>
+          <span>Kyan Beer - Portfolio</span>
+          <button class="chrome-tab-close-btn" onclick="handleCloseTab(event, 'main')">×</button>
+        </div>
+        
+        <div class="chrome-tab" id="tabController" onclick="switchChromeTab('controller')">
+          <span class="chrome-tab-icon">🕹️</span>
+          <span>Grizzly Arcade Box</span>
+          <button class="chrome-tab-close-btn" onclick="handleCloseTab(event, 'controller')">×</button>
+        </div>
+
+        <div class="chrome-tab" id="tabZelda" onclick="switchChromeTab('zelda')">
+          <span class="chrome-tab-icon">📷</span>
+          <span>Zelda Fotoshoot</span>
+          <button class="chrome-tab-close-btn" onclick="handleCloseTab(event, 'zelda')">×</button>
+        </div>
+
+        <div class="chrome-tab" id="tabUxd" onclick="switchChromeTab('uxd')">
+          <span class="chrome-tab-icon">📐</span>
+          <span>Figma UX Project</span>
+          <button class="chrome-tab-close-btn" onclick="handleCloseTab(event, 'uxd')">×</button>
+        </div>
+
+        <div class="chrome-tab" id="tabMuzus" onclick="switchChromeTab('muzus')">
+          <span class="chrome-tab-icon">💨</span>
+          <span>Muzus: Breath Battle</span>
+          <button class="chrome-tab-close-btn" onclick="handleCloseTab(event, 'muzus')">×</button>
+        </div>
+
+        <button class="chrome-new-tab-btn" title="Nieuw tabblad openen" onclick="openNewTabDialog()">+</button>
+      </div>
+
+      <!-- Chrome Navigatie Toolbar (Knoppen, Omnibox, Menu) -->
+      <div class="chrome-toolbar">
+        <div class="chrome-nav-group">
+          <button class="chrome-tool-btn" title="Vorige pagina" onclick="historyBack()">
+            <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          </button>
+          <button class="chrome-tool-btn" title="Volgende pagina" onclick="historyForward()">
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </button>
+          <button class="chrome-tool-btn" title="Pagina vernieuwen" onclick="reloadPage()">
+            <svg viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+          </button>
+          <button class="chrome-tool-btn" title="Startpagina" onclick="scrollToSection('hero')">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          </button>
+        </div>
+
+        <!-- Omnibox (Adresbalk) -->
+        <div class="chrome-omnibox">
+          <div class="omnibox-security">
+            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+            <span>Beveiligd</span>
+          </div>
+          <div class="omnibox-url" id="omniboxUrl">
+            <span>https://</span>kyanbeer.cmd/portfolio<span id="urlHash">#home</span>
+          </div>
+          <div class="omnibox-star" id="omniboxStar" title="Bladwijzer toevoegen" onclick="toggleBookmark()">
+            ★
+          </div>
+        </div>
+
+        <!-- Chrome Opties / Hamburger -->
+        <button class="chrome-tool-btn" title="Aanpassen en beheer" onclick="showXpDialog('Google Chrome Opties', 'Portfolio Website v1.0\nOntwikkeld door Kyan Beer (20)\nAvans Hogeschool CMD')">
+          <svg viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+        </button>
+      </div>
+
+      <!-- Bladwijzerbalk -->
+      <div class="chrome-bookmarks-bar">
+        <a href="#hero" class="bookmark-item" onclick="scrollToSection('hero'); return false;">
+          <span class="bookmark-icon">⭐</span> Home
+        </a>
+        <a href="#about" class="bookmark-item" onclick="scrollToSection('about'); return false;">
+          <span class="bookmark-icon">👤</span> Over Mij
+        </a>
+        <a href="#services" class="bookmark-item" onclick="scrollToSection('services'); return false;">
+          <span class="bookmark-icon">🛠️</span> Diensten
+        </a>
+        <a href="#portfolio" class="bookmark-item" onclick="scrollToSection('portfolio'); return false;">
+          <span class="bookmark-icon">🎨</span> Portfolio
+        </a>
+        <a href="#contact" class="bookmark-item" onclick="scrollToSection('contact'); return false;">
+          <span class="bookmark-icon">✉️</span> Contact
+        </a>
+        <a href="https://instagram.com/kyanbeer" target="_blank" rel="noopener" class="bookmark-item">
+          <span class="bookmark-icon">📸</span> Instagram (@kyanbeer)
+        </a>
+      </div>
+
+      <!-- ====================================================================
+           INHOUD VIEWPORT MET WINDOWS XP SCROLLBAR
+           ==================================================================== -->
+      <div class="xp-viewport" id="xpViewport">
+        <div class="portfolio-content">
+
+          <!-- Wireframe Header: Brand Links + Nav Menu Rechts -->
+          <header class="site-main-header">
+            <div class="header-inner">
+              <a href="#hero" class="site-brand">
+                <span class="site-brand-title">KYAN BEER</span>
+                <span class="site-brand-badge">Avans CMD</span>
+              </a>
+              <nav class="site-nav">
+                <a href="#hero" class="nav-link is-active" onclick="scrollToSection('hero'); return false;">HOME</a>
+                <a href="#about" class="nav-link" onclick="scrollToSection('about'); return false;">ABOUT</a>
+                <a href="#services" class="nav-link" onclick="scrollToSection('services'); return false;">SERVICES</a>
+                <a href="#portfolio" class="nav-link" onclick="scrollToSection('portfolio'); return false;">PORTFOLIO</a>
+                <a href="#contact" class="nav-link" onclick="scrollToSection('contact'); return false;">CONTACT</a>
+              </nav>
+            </div>
+          </header>
+
+          <!-- HERO SECTIE (Conform Wireframe: Tekst links + Foto rechts) -->
+          <section class="hero-section" id="hero">
+            <div class="section-container">
+              <div class="hero-grid">
+                
+                <!-- Linker Kolom: Titels, Tekst, Knoppen, Toolkit -->
+                <div class="hero-text-content">
+                  <h1 class="hero-title">
+                    Creatieve Maker, UX Designer & <span class="accent-text">Fotograaf</span>
+                  </h1>
+                  <p class="hero-bio">
+                    Hoi! Ik ben <strong>Kyan Beer</strong>, 20 jaar oud en CMD-student aan de <strong>Avans Hogeschool</strong>. Ik hou ervan om breed bezig te zijn en ben lekker veelzijdig in wat ik doe, de ene keer werk ik aan een strakke interface in Figma, de andere keer sta ik in de houtwerkplaats te zagen en een Arduino te solderen, of ben ik met mijn camera op pad voor een fotoshoot.
+                  </p>
+                  
+                  <div class="hero-actions">
+                    <a href="#portfolio" class="btn-primary" onclick="scrollToSection('portfolio'); return false;">
+                      <span>Bekijk mijn werk</span>
+                      <span>↓</span>
+                    </a>
+                    <a href="#contact" class="btn-secondary" onclick="scrollToSection('contact'); return false;">
+                      <span>Stuur een bericht</span>
+                    </a>
+                  </div>
+
+                  <!-- 8 Apps Badges -->
+                  <div class="hero-tools-wrapper">
+                    <div class="hero-tools-label">Gereedschappen & Software:</div>
+                    <div class="tools-pills-container">
+                      <span class="tool-pill" title="Adobe Lightroom - RAW Fotobewerking">
+                        <span style="color:#31A8FF;">Lr</span> Lightroom
+                      </span>
+                      <span class="tool-pill" title="Adobe Photoshop - Beeldbewerking & Posters">
+                        <span style="color:#31A8FF;">Ps</span> Photoshop
+                      </span>
+                      <span class="tool-pill" title="Adobe Illustrator - Vector Illustraties">
+                        <span style="color:#FF9A00;">Ai</span> Illustrator
+                      </span>
+                      <span class="tool-pill" title="Adobe InDesign - Lasersnijden & Lay-out">
+                        <span style="color:#FF3366;">Id</span> InDesign
+                      </span>
+                      <span class="tool-pill" title="Canva - Snelle Presentaties">
+                        <span style="color:#00C4CC;">Cv</span> Canva
+                      </span>
+                      <span class="tool-pill" title="Figma - UI/UX & Webdesign">
+                        <span style="color:#F24E1E;">Fg</span> Figma
+                      </span>
+                      <span class="tool-pill" title="Blender - 3D Modelleren">
+                        <span style="color:#EA7600;">Bl</span> Blender
+                      </span>
+                      <span class="tool-pill" title="Arduino - Microcontrollers & Elektronica">
+                        <span style="color:#00979D;">Ar</span> Arduino
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Rechter Kolom: Foto van Kyan Beer (Honkbal & Maker vibe) -->
+                <div class="hero-visual-content">
+                  <div class="hero-photo-card">
+                    <div class="hero-photo-badge">Avans CMD • 20 Jaar</div>
+                    <div class="hero-photo-img-wrapper">
+                      <img src="Images/Foto24.jpeg" alt="Kyan Beer met honkbalknuppel en helm" onclick="openLightbox('Images/Foto24.jpeg', 'Kyan Beer (20 jaar) - CMD Student aan Avans Hogeschool')">
+                    </div>
+                    <div class="hero-photo-caption">
+                      <div>
+                        <div class="hero-photo-name">Kyan Beer</div>
+                        <div class="hero-photo-role"></div>
+                      </div>
+                      <a href="https://instagram.com/kyanbeer" target="_blank" rel="noopener" style="font-size:12px; font-weight:bold; color:var(--color-olive); text-decoration:none;">
+                        @kyanbeer ↗
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- OVER MIJ (ABOUT SECTIE) -->
+          <section class="about-section" id="about">
+            <div class="section-container">
+              <div class="section-heading-wrapper">
+                <h2 class="section-heading">OVER MIJ</h2>
+                <div class="section-heading-underline"></div>
+              </div>
+
+              <div class="about-grid">
+                <!-- Bio & Veelzijdigheid -->
+                <div class="about-bio-text">
+                  <p>
+                    Welkom op mijn portfolio! Ik ben <strong>Kyan Beer</strong>, 20 jaar en student Communicatie en Multimedia Design (CMD) aan Avans.
+                  </p>
+                  <p>
+                    Wat mij typeert is dat ik niet vastzit aan één richting. Ik vind het juist gaaf om veelzijdig te zijn en met allerlei verschillende dingen bezig te zijn. Ik ontwerp graag schermen en gebruikerservaringen in <strong>Figma</strong>, maar ik word net zo enthousiast van met mijn handen bezig zijn in de werkplaats: hout zagen, circuits solderen aan een <strong>Arduino</strong>, of lekker sleutelen aan foto's in <strong>Photoshop</strong> en <strong>Lightroom</strong>.
+                  </p>
+                  <div class="about-highlight-box">
+                    "Van het 3D-modelleren van een honkbalknuppel in Blender tot de nabewerking van een vette cosplay fotoshoot in de Loonse en Drunense Duinen, ik vind het geweldig om nieuwe dingen te maken en te ontdekken."
+                  </div>
+                  <p>
+                    Mijn passie voor honkbal zie je ook terug in mijn werk: van mijn profielfoto tot de 3D-gemodelleerde honkbalknuppel die ik als joystick heb gebruikt voor mijn eigen arcade controller!
+                  </p>
+                </div>
+
+                <!-- 8 Software Tools Showcase Grid -->
+                <div class="about-apps-column">
+                  <div class="apps-showcase-heading">Tools Waar Ik Graag Mee Werk</div>
+                  <div class="apps-showcase-grid">
+                    
+                    <div class="app-card">
+                      <div class="app-card-icon app-icon-lr"><strong>Lr</strong></div>
+                      <div>
+                        <div class="app-card-title">Lightroom</div>
+                        <div class="app-card-desc">RAW-foto's ontwikkelen, kleuren aanpassen en sfeer neerzetten voor buitenfoto's.</div>
+                      </div>
+                    </div>
+
+                    <div class="app-card">
+                      <div class="app-card-icon app-icon-ps"><strong>Ps</strong></div>
+                      <div>
+                        <div class="app-card-title">Photoshop</div>
+                        <div class="app-card-desc">Foto's combineren in lagen, effecten toevoegen en posters maken (zoals de Zelda shoot).</div>
+                      </div>
+                    </div>
+
+                    <div class="app-card">
+                      <div class="app-card-icon app-icon-ai"><strong>Ai</strong></div>
+                      <div>
+                        <div class="app-card-title">Illustrator</div>
+                        <div class="app-card-desc">Strakke vectoren, logo's, iconen en grafische illustraties ontwerpen.</div>
+                      </div>
+                    </div>
+
+                    <div class="app-card">
+                      <div class="app-card-icon app-icon-id"><strong>Id</strong></div>
+                      <div>
+                        <div class="app-card-title">InDesign</div>
+                        <div class="app-card-desc">Nauwkeurige snijlijnen klaarmaken voor de lasersnijder van acryl en documenten opmaken.</div>
+                      </div>
+                    </div>
+
+                    <div class="app-card">
+                      <div class="app-card-icon app-icon-cv"><strong>Cv</strong></div>
+                      <div>
+                        <div class="app-card-title">Canva</div>
+                        <div class="app-card-desc">Snel moodboards, ideeën en overzichtelijke presentaties in elkaar zetten.</div>
+                      </div>
+                    </div>
+
+                    <div class="app-card">
+                      <div class="app-card-icon app-icon-fg"><strong>Fg</strong></div>
+                      <div>
+                        <div class="app-card-title">Figma</div>
+                        <div class="app-card-desc">Schermen ontwerpen voor apps en websites, wireframes maken en logica uittesten.</div>
+                      </div>
+                    </div>
+
+                    <div class="app-card">
+                      <div class="app-card-icon app-icon-bl"><strong>Bl</strong></div>
+                      <div>
+                        <div class="app-card-title">Blender</div>
+                        <div class="app-card-desc">3D-modellen maken (zoals de honkbalknuppel-joystick) om te kunnen 3D-printen.</div>
+                      </div>
+                    </div>
+
+                    <div class="app-card">
+                      <div class="app-card-icon app-icon-ar"><strong>Ar</strong></div>
+                      <div>
+                        <div class="app-card-title">Arduino</div>
+                        <div class="app-card-desc">Code schrijven in C++ om knoppen en joysticks werkend te koppelen aan de computer.</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- SERVICES SECTIE (Conform Wireframe: 3 Kolommen) -->
+          <section class="services-section" id="services">
+            <div class="section-container">
+              <div class="section-heading-wrapper">
+                <h2 class="section-heading">WAT IK DOE</h2>
+                <div class="section-heading-underline"></div>
+              </div>
+
+              <div class="services-grid">
+                
+                <!-- Kolom 1: Fotografie & Beeldbewerking -->
+                <div class="service-card">
+                  <span class="service-card-number">01</span>
+                  <div class="service-icon-wrap">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+                    </svg>
+                  </div>
+                  <h3 class="service-title">Foto's Schieten & Bewerken</h3>
+                  <p class="service-desc">
+                    Fotoshoots op toffe buitenlocaties, zoals de zandduinen van de Loonse en Drunense Duinen. Ik doe zowel het fotograferen zelf als de hele nabewerking in Lightroom en Photoshop: kleuren finetunen, schaduwen perfectioneren of er een poster van maken.
+                  </p>
+                  <div class="service-tags">
+                    <span class="service-tag-item">Buitenshoots</span>
+                    <span class="service-tag-item">Color Grading</span>
+                    <span class="service-tag-item">Retouche</span>
+                    <span class="service-tag-item">Poster Design</span>
+                  </div>
+                </div>
+
+                <!-- Kolom 2: UX/UI & Webdesign -->
+                <div class="service-card">
+                  <span class="service-card-number">02</span>
+                  <div class="service-icon-wrap">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 4v11h16V7H4zm2 2h4v2H6V9zm0 4h7v2H6v-2z"/>
+                    </svg>
+                  </div>
+                  <h3 class="service-title">Websites & Apps Ontwerpen</h3>
+                  <p class="service-desc">
+                    Schermen en gebruikerservaringen ontwerpen in Figma. Ik let goed op logische knoppen, handige volgordes en duidelijke feedback voor de gebruiker, zodat een app of website gewoon soepel en logisch werkt.
+                  </p>
+                  <div class="service-tags">
+                    <span class="service-tag-item">Figma</span>
+                    <span class="service-tag-item">Wireframes</span>
+                    <span class="service-tag-item">Gebruiksgemak</span>
+                    <span class="service-tag-item">App Flows</span>
+                  </div>
+                </div>
+
+                <!-- Kolom 3: Fysieke Interactie & Prototyping -->
+                <div class="service-card">
+                  <span class="service-card-number">03</span>
+                  <div class="service-icon-wrap">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M22 9V7h-2V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14zM6 13h5v5H6v-5zm6-6h4v4h-4V7z"/>
+                    </svg>
+                  </div>
+                  <h3 class="service-title">Bouwen met Hardware & Hout</h3>
+                  <p class="service-desc">
+                    Niet alleen digitaal ontwerpen, maar ook fysiek bouwen met gereedschap. Van houten behuizingen zagen en lijmen tot acrylplaat lasersnijden, onderdelen 3D-modelleren in Blender en Arduino's programmeren en solderen.
+                  </p>
+                  <div class="service-tags">
+                    <span class="service-tag-item">Arduino</span>
+                    <span class="service-tag-item">Houtwerkplaats</span>
+                    <span class="service-tag-item">Lasersnijder</span>
+                    <span class="service-tag-item">Blender 3D</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- PORTFOLIO SECTIE -->
+          <section class="portfolio-section" id="portfolio">
+            <div class="section-container">
+              <div class="portfolio-header-area">
+                <div class="section-heading-wrapper" style="margin-bottom:0;">
+                  <h2 class="section-heading">PORTFOLIO</h2>
+                  <div class="section-heading-underline"></div>
+                </div>
+
+                <!-- Project Tabs -->
+                <div class="portfolio-filter-tabs" id="projectTabs">
+                  <button class="filter-tab-btn is-active" onclick="showProjectTab('project-zelda', this)">Zelda Fotoshoot</button>
+                  <button class="filter-tab-btn" onclick="showProjectTab('project-controller', this)">GRIZZLY Controller</button>
+                  <button class="filter-tab-btn" onclick="showProjectTab('project-uxd', this)">Figma UX</button>
+                  <button class="filter-tab-btn" onclick="showProjectTab('project-muzus', this)">Muzus: Breath Battle</button>
+                </div>
+              </div>
+
+              <div class="portfolio-projects-container">
+
+                <!-- ==============================================================
+                     PROJECT 1: ZELDA GERUDO LINK FOTOSHOOT
+                     ============================================================== -->
+                <article class="project-block project-tab-panel" data-category="photo" id="project-zelda">
+                  <div class="project-xp-banner">
+                    <div class="project-xp-title">
+                      <span>The Legend of Zelda Fotoshoot: Gerudo Link</span>
+                    </div>
+                    <div class="project-badge-pill">Fotografie &amp; Photoshop</div>
+                  </div>
+
+                  <div class="project-main-body">
+
+                    <!-- RESULTAAT: Eindresultaat groot bovenaan -->
+                    <div class="project-hero-result">
+                      <div class="project-hero-img-wrap" onclick="openLightbox('Images/Foto6.jpg', 'Eindresultaat: Gerudo Link in de Loonse en Drunense Duinen')">
+                        <img src="Images/Foto6.jpg" alt="Eindresultaat Gerudo Link">
+                        <div class="project-hero-overlay">&#128269; Klik voor volledige resolutie</div>
+                      </div>
+                      <div class="project-hero-meta">
+                        <table class="project-meta-table">
+                          <tr><td class="meta-key">Model:</td><td class="meta-val"><a href="https://instagram.com/calico_moss" target="_blank" rel="noopener">@calico_moss &#8599;</a></td></tr>
+                          <tr><td class="meta-key">Locatie:</td><td class="meta-val">Loonse en Drunense Duinen</td></tr>
+                          <tr><td class="meta-key">Cosplay:</td><td class="meta-val">Gerudo Link (Breath of the Wild)</td></tr>
+                          <tr><td class="meta-key">Camera:</td><td class="meta-val">Canon EOS 200D &middot; 50-250mm F4-F5.6</td></tr>
+                          <tr><td class="meta-key">Software:</td><td class="meta-val">Adobe Lightroom &amp; Photoshop</td></tr>
+                        </table>
+                        <p class="project-description-text" style="margin-top:10px;">
+                          Locatiefotoshoot in de duinen, het perfecte decor voor de Gerudo-sfeer uit Breath of the Wild. Het Zelda-logo achter het model is slim in lagen verwerkt zodat het op een echte gameposter lijkt.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- PROCES: Voor/Na slider + screenshots compact -->
+                    <div class="project-secondary-row">
+
+                      <div class="project-slider-compact">
+                        <div class="photoshop-wip-header" style="margin-bottom:8px;">
+                          <span>Voor &amp; Na: sleep de hendel</span>
+                        </div>
+                        <div class="before-after-container" id="beforeAfterSlider">
+                          <div class="after-layer" id="afterLayer">
+                            <img id="afterImage" src="Images/Foto29.jpg" alt="Na bewerking">
+                          </div>
+                          <div class="before-layer" id="beforeLayer">
+                            <img id="beforeImage" src="Images/Foto30.jpg" alt="RAW origineel">
+                          </div>
+                          <div class="before-after-handle" id="sliderHandle">
+                            <div class="before-after-handle-circle">&#8596;</div>
+                          </div>
+                          <span class="before-after-label label-before">Voor</span>
+                          <span class="before-after-label label-after">Na</span>
+                        </div>
+                        <div class="comparison-selectors" style="margin-top:6px;">
+                          <span style="font-size:11px; font-weight:bold; color:var(--color-olive-dark); align-self:center;">Foto:</span>
+                          <button class="comparison-selector-btn is-active" onclick="changeComparison(1, this)">1</button>
+                          <button class="comparison-selector-btn" onclick="changeComparison(2, this)">2</button>
+                          <button class="comparison-selector-btn" onclick="changeComparison(3, this)">3</button>
+                          <button class="comparison-selector-btn" onclick="changeComparison(4, this)">4</button>
+                        </div>
+                      </div>
+
+                      <div class="project-process-compact">
+                        <div class="photoshop-wip-header" style="margin-bottom:8px;">
+                          <svg width="14" height="14" viewBox="0 0 24 24"><rect width="24" height="24" rx="3" fill="#001E36"/><text x="12" y="16" fill="#31A8FF" font-size="10" font-weight="bold" text-anchor="middle" font-family="sans-serif">Ps</text></svg>
+                          <span>Bewerkingsproces:</span>
+                        </div>
+                        <div class="photoshop-wip-thumbs-grid">
+                          <div class="thumb-zoomable" onclick="openLightbox('Images/Foto28.jpeg', 'Stap 1: Lightroom')">
+                            <img src="Images/Foto28.jpeg" alt="Lightroom">
+                          </div>
+                          <div class="thumb-zoomable" onclick="openLightbox('Images/Foto27.jpeg', 'Stap 2: Photoshop (Zelda logo in lagen achter het model)')">
+                            <img src="Images/Foto27.jpeg" alt="Photoshop">
+                          </div>
+                          <div class="thumb-zoomable" onclick="openLightbox('Images/Foto6.jpg', 'Eindresultaat: Gerudo Link poster')">
+                            <img src="Images/Foto6.jpg" alt="Eindresultaat">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </article>
+
+
+                <!-- ==============================================================
+                     PROJECT 2: DIY GRIZZLY ARCADE GAME CONTROLLER
+                     ============================================================== -->
+                <article class="project-block project-tab-panel" data-category="hardware" id="project-controller" style="display:none;">
+                  <div class="project-xp-banner">
+                    <div class="project-xp-title">
+                      <span>Project 02: DIY &ldquo;GRIZZLY&rdquo; Arcade Game Controller</span>
+                    </div>
+                    <div class="project-badge-pill">Fysieke Interactie &amp; Hardware</div>
+                  </div>
+
+                  <div class="project-main-body">
+
+                    <!-- RESULTAAT: Eindresultaat groot bovenaan -->
+                    <div class="project-hero-result">
+                      <div class="project-hero-img-wrap" onclick="openLightbox('Images/Foto18.jpeg', 'Volledige GRIZZLY Arcade Controller')">
+                        <img src="Images/Foto18.jpeg" alt="GRIZZLY Arcade Controller volledig">
+                        <div class="project-hero-overlay">&#128269; Klik voor volledige resolutie</div>
+                      </div>
+                      <div class="project-hero-meta">
+                        <table class="project-meta-table">
+                          <tr><td class="meta-key">Constructie:</td><td class="meta-val">Houtwerkplaats (gezaagd, nailgun en houtlijm)</td></tr>
+                          <tr><td class="meta-key">Design:</td><td class="meta-val">Handgeschilderd, GRIZZLY handgeschreven</td></tr>
+                          <tr><td class="meta-key">Bovenplaat:</td><td class="meta-val">Lasersnijder acryl (Adobe InDesign)</td></tr>
+                          <tr><td class="meta-key">Joystick:</td><td class="meta-val">3D honkbalknuppel gemodelleerd in Blender</td></tr>
+                          <tr><td class="meta-key">Elektronica:</td><td class="meta-val">Arduino Uno R4 Minima &amp; gesoldeerde circuits</td></tr>
+                        </table>
+                        <p class="project-description-text" style="margin-top:10px;">
+                          Van houtwerkplaats tot code: de behuizing zelf gezaagd, geverfd en voorzien van een handgeschreven GRIZZLY-design. De joystick is een 3D-geprinte honkbalknuppel (Blender). Binnenin stuurt een Arduino Uno R4 alle knoppen en bewegingen naar de pc.
+                        </p>
+                        <!-- Video link -->
+                        <div class="video-showcase-box" style="margin-top:14px;">
+                          <div class="video-info-left">
+                            <div class="video-play-icon-badge">&#9654;</div>
+                            <div>
+                              <div class="video-title-compact">Demonstratievideo</div>
+                              <div class="video-desc-compact">Live demo op Avans MyMedia</div>
+                            </div>
+                          </div>
+                          <a href="https://mymedia.avans.nl/media/ARCADEBOXCT2/0_ye9cxapi" target="_blank" rel="noopener" class="video-external-btn">
+                            <span>Bekijk Video &#8599;</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- PROCES: Bouwproces thumbnails + code compact -->
+                    <div class="project-secondary-row">
+
+                      <div class="project-process-compact" style="flex:1.5;">
+                        <div class="photoshop-wip-header" style="margin-bottom:8px;">
+                          <span>Bouwproces:</span>
+                        </div>
+                        <div class="photoshop-wip-thumbs-grid" style="grid-template-columns: repeat(4,1fr);">
+                          <div class="thumb-zoomable" onclick="openLightbox('Images/Foto1.jpeg', 'Blender: 3D honkbalknuppel joystick')">
+                            <img src="Images/Foto1.jpeg" alt="Blender joystick">
+                          </div>
+                          <div class="thumb-zoomable" onclick="openLightbox('Images/Foto19.jpeg', 'InDesign: Lasercutter uitsnede acrylplaat')">
+                            <img src="Images/Foto19.jpeg" alt="Lasercutter cutout">
+                          </div>
+                          <div class="thumb-zoomable" onclick="openLightbox('Images/Foto16.jpeg', 'Binnenkant: Gesoldeerde bedrading')">
+                            <img src="Images/Foto16.jpeg" alt="Binnenkant gesoldeerd">
+                          </div>
+                          <div class="thumb-zoomable" onclick="openLightbox('Images/Foto17.jpeg', 'Arduino IDE broncode')">
+                            <img src="Images/Foto17.jpeg" alt="Arduino code">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Arduino Code Preview compact -->
+                      <div class="project-process-compact" style="flex:1;">
+                        <div class="code-preview-box">
+                          <div class="code-preview-header">
+                            <span>ARDUINO_keyjoy.ino</span>
+                            <span>C++ Firmware</span>
+                          </div>
+                          <pre><code>#include &lt;Keyboard.h&gt;
+#include &lt;Mouse.h&gt;
+
+int pins[11] = {3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+int keys[11] = {'w', 'a', 's', 'd', ' ', 'e', 'f', 'g', 'h', 'i', 'j'}; //- SET your keys
+int totalPins = 5; //- ENABLE your keys
+
+int startKeyboardEnabled = 1;  //- SET "0" for KEYBOARD debug mode
+int startJoystickEnabled = 0;  //- SET "0" for MOUSE debug mode
+
+int keyboardEnabled = 0;
+int joystickEnabled = 1;
+
+const int xPin = A0;
+const int yPin = A1;
+
+const int xMin = 300;
+const int xMax = 680;
+const int yMin = 260;
+const int yMax = 730;
+
+const float smoothingFactor = 0.4;
+
+float smoothX = 0;
+float smoothY = 0;
+
+void setup() {
+  Keyboard.begin();
+  Mouse.begin();
+  Serial.begin(115200);
+
+  for (int i = 0; i &lt; totalPins; i++) {
+    pinMode(pins[i], INPUT);
+  }
+
+  pinMode(2, INPUT); // LEFT CLICK PIN
+
+  keyboardEnabled = startKeyboardEnabled;
+  joystickEnabled = startJoystickEnabled;
+
+  delay(2000);
+}
+
+void loop() {
+
+  if (Serial.available() &gt; 0) {
+    char c = Serial.read();
+
+    if (c == '1') joystickEnabled = 1;
+    if (c == '0') joystickEnabled = 0;
+    if (c == 'k') keyboardEnabled = 1;
+    if (c == 'l') keyboardEnabled = 0;
+  }
+
+  // keyboard
+  for (int i = 0; i &lt; totalPins; i++) {
+    if (keyboardEnabled == 1) {
+      if (digitalRead(pins[i]) == HIGH) {
+        Keyboard.press(keys[i]);
+      } else {
+        Keyboard.release(keys[i]);
+      }
+    } else {
+      Keyboard.release(keys[i]);
+    }
+  }
+
+  // mouse movement
+  int x = analogRead(xPin);
+  int y = analogRead(yPin);
+
+  x = constrain(x, xMin, xMax);
+  y = constrain(y, yMin, yMax);
+
+  x = x - ((xMin + xMax) / 2);
+  y = y - ((yMin + yMax) / 2);
+
+  x = map(x, -(xMax - xMin) / 2, (xMax - xMin) / 2, 50, -50);
+  y = map(y, -(yMax - yMin) / 2, (yMax - yMin) / 2, -50, 50);
+
+  smoothX += (x - smoothX) * smoothingFactor;
+  smoothY += (y - smoothY) * smoothingFactor;
+
+  if (joystickEnabled == 1) {
+    Mouse.move((int)smoothX, (int)smoothY, 0);
+  } else {
+    Mouse.release(MOUSE_LEFT);
+  }
+
+  Serial.print("K=");
+  Serial.print(keyboardEnabled);
+  Serial.print(" J=");
+  Serial.print(joystickEnabled);
+  Serial.print(" M=");
+  Serial.print((int)smoothX);
+  Serial.print(",");
+  Serial.println((int)smoothY);
+
+  delay(10);
+}</code></pre>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </article>
+
+
+                <!-- ==============================================================
+                     PROJECT 3: FIGMA USER EXPERIENCE DESIGN (UXD)
+                     ============================================================== -->
+                <article class="project-block project-tab-panel" data-category="ux" id="project-uxd" style="display:none;">
+                  <div class="project-xp-banner">
+                    <div class="project-xp-title">
+                      <span>Project 03: User Experience Design in Figma</span>
+                    </div>
+                    <div class="project-badge-pill">UI/UX &amp; Webdesign</div>
+                  </div>
+
+                  <div class="project-main-body">
+
+                    <!-- RESULTAAT: Overzichtsscherm groot bovenaan -->
+                    <div class="project-hero-result">
+                      <div class="project-hero-img-wrap" onclick="openLightbox('Images/Foto9.jpg', 'UXD 1 Overzicht: 5-staps e-commerce flow')">
+                        <img src="Images/Foto9.jpg" alt="UX Overzicht">
+                        <div class="project-hero-overlay">&#128269; Klik voor volledige resolutie</div>
+                      </div>
+                      <div class="project-hero-meta">
+                        <table class="project-meta-table">
+                          <tr><td class="meta-key">Vak:</td><td class="meta-val">UXD 1: User Interface Design (Avans)</td></tr>
+                          <tr><td class="meta-key">Tool:</td><td class="meta-val">Figma</td></tr>
+                          <tr><td class="meta-key">Focus:</td><td class="meta-val">Affordances, signifiers &amp; visuele hi&euml;rarchie</td></tr>
+                        </table>
+                        <p class="project-description-text" style="margin-top:10px;">
+                          Mobiele bestelflow voor een tech webshop van startscherm tot checkout. Elke stap is ontworpen met duidelijke knoppen en logische navigatie zodat gebruikers direct weten wat ze moeten doen.
+                        </p>
+                        <a href="Images/Foto15.pdf" target="_blank" class="btn-primary" style="display:inline-flex; margin-top:12px; padding:9px 18px; font-size:12.5px;">
+                          <span>Volledig PDF Document</span>
+                          <span>&#8599;</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- PROCES: UX schermen als thumbnails -->
+                    <div class="project-secondary-row" style="flex-wrap:wrap;">
+                      <div style="width:100%;">
+                        <div class="photoshop-wip-header" style="margin-bottom:8px;"><span>Alle schermen:</span></div>
+                        <div class="ux-flow-container">
+                          <div class="ux-flow-steps-grid">
+                            <div class="ux-step-card" onclick="openLightbox('Images/Foto9.jpg', 'Overzicht: 5-staps flow')">
+                              <div class="ux-step-thumb"><img src="Images/Foto9.jpg" alt="Overzicht"></div>
+                              <div class="ux-step-info"><div class="ux-step-badge">Overzicht</div><div class="ux-step-title">5-Staps Flow</div></div>
+                            </div>
+                            <div class="ux-step-card" onclick="openLightbox('Images/Foto10.jpg', 'Start: App openen & navigatie')">
+                              <div class="ux-step-thumb"><img src="Images/Foto10.jpg" alt="Start"></div>
+                              <div class="ux-step-info"><div class="ux-step-badge">Start</div><div class="ux-step-title">App openen</div></div>
+                            </div>
+                            <div class="ux-step-card" onclick="openLightbox('Images/Foto11.jpg', 'Stap 1: Categorie Mice')">
+                              <div class="ux-step-thumb"><img src="Images/Foto11.jpg" alt="Categorie"></div>
+                              <div class="ux-step-info"><div class="ux-step-badge">Stap 1</div><div class="ux-step-title">Categorie</div></div>
+                            </div>
+                            <div class="ux-step-card" onclick="openLightbox('Images/Foto12.jpg', 'Stap 2: Productpagina')">
+                              <div class="ux-step-thumb"><img src="Images/Foto12.jpg" alt="Product"></div>
+                              <div class="ux-step-info"><div class="ux-step-badge">Stap 2</div><div class="ux-step-title">Productpagina</div></div>
+                            </div>
+                            <div class="ux-step-card" onclick="openLightbox('Images/Foto13.jpg', 'Stap 3 & 4: Winkelwagen & feedback')">
+                              <div class="ux-step-thumb"><img src="Images/Foto13.jpg" alt="Winkelwagen"></div>
+                              <div class="ux-step-info"><div class="ux-step-badge">Stap 3&amp;4</div><div class="ux-step-title">Winkelwagen</div></div>
+                            </div>
+                            <div class="ux-step-card" onclick="openLightbox('Images/Foto14.jpg', 'Einde: Checkout & aankoop')">
+                              <div class="ux-step-thumb"><img src="Images/Foto14.jpg" alt="Checkout"></div>
+                              <div class="ux-step-info"><div class="ux-step-badge">Einde</div><div class="ux-step-title">Checkout</div></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </article>
+
+
+                <!-- ==============================================================
+                     PROJECT 4: MUZUS SOCIAL DESIGN: BREATH BATTLE
+                     ============================================================== -->
+                <article class="project-block project-tab-panel" data-category="social-design" id="project-muzus" style="display:none;">
+                  <div class="project-xp-banner">
+                    <div class="project-xp-title">
+                      <span>Project 04: Social Design voor Muzus: "Breath Battle" Installatie</span>
+                    </div>
+                    <div class="project-badge-pill">Social Design &amp; AI Visualisatie</div>
+                  </div>
+
+                  <div class="project-main-body">
+
+                    <!-- RESULTAAT: AI Visualisatie groot bovenaan -->
+                    <div class="project-hero-result">
+                      <div class="project-hero-img-wrap" onclick="openLightbox('Images/Foto21.jpeg', 'Eindwerk: De Breath Battle installatie in de publieke ruimte bij het station (Social Design voor Muzus, GGD en Gemeente Zutphen)')">
+                        <img src="Images/Foto21.jpeg" alt="Muzus Breath Battle Installatie">
+                        <div class="project-hero-overlay">&#128269; Klik voor volledige resolutie</div>
+                      </div>
+                      <div class="project-hero-meta">
+                        <table class="project-meta-table">
+                          <tr><td class="meta-key">Opdrachtgever:</td><td class="meta-val">Social Designbureau Muzus</td></tr>
+                          <tr><td class="meta-key">Partners:</td><td class="meta-val">GGD Noord- en Oost-Gelderland, Gemeente en Perspectief Zutphen</td></tr>
+                          <tr><td class="meta-key">Uitdaging:</td><td class="meta-val">Van NIX18 naar iets dat echt werkt, gericht op vapen en roken onder jongeren van 12 tot 18 jaar</td></tr>
+                          <tr><td class="meta-key">Concept:</td><td class="meta-val"><strong>Breath Battle</strong>: interactieve longinhoud tester en gespreksstarter</td></tr>
+                          <tr><td class="meta-key">Inspiratie:</td><td class="meta-val">De iconische Scream Canister uit <em>Monsters, Inc.</em></td></tr>
+                          <tr><td class="meta-key">Tools:</td><td class="meta-val">AI Visualisatie, doelgroeponderzoek en straatinterviews</td></tr>
+                        </table>
+                        <p class="project-description-text" style="margin-top:10px;">
+                          Voor <strong>Muzus</strong> ontwierp ik een fysieke gespreksstarter in de openbare ruimte. In plaats van een belerend vingertje daagt de installatie voorbijgangers uit tot een laagdrempelige battle van hun longcapaciteit. Zowel rokers als niet-rokers en jong en oud kunnen meedoen. Zo ontstaat spelenderwijs het besef wat roken en vapen met je longen doet.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- PROCES & TESTEN: Quotes van de doelgroep -->
+                    <div class="project-secondary-row">
+
+                      <!-- Quotes uitgelicht in kaarten over de volle breedte -->
+                      <div class="project-process-compact" style="flex:1;">
+                        <div class="photoshop-wip-header" style="margin-bottom:8px;">
+                          <span>Quotes uit doelgroepinterviews (Zutphen, Breda en Tilburg, 12 tot 18 jaar):</span>
+                        </div>
+                        <div class="muzus-quotes-grid">
+                          <div class="muzus-quote-card">
+                            <span class="muzus-quote-mark">&ldquo;</span>
+                            <p class="muzus-quote-text">Heel cool. Het is wel iets wat ik uit zou willen proberen!</p>
+                            <span class="muzus-quote-author">Jongere (14) &bull; Zutphen</span>
+                          </div>
+                          <div class="muzus-quote-card">
+                            <span class="muzus-quote-mark">&ldquo;</span>
+                            <p class="muzus-quote-text">Beter dan niks doen in Zutphen. Leuk en interactief, dit zie je nooit.</p>
+                            <span class="muzus-quote-author">Doelgroepinterview &bull; Zutphen</span>
+                          </div>
+                          <div class="muzus-quote-card">
+                            <span class="muzus-quote-mark">&ldquo;</span>
+                            <p class="muzus-quote-text">Door het 1-op-1 battle aspect net als op de schets, zou ik dit veel sneller doen met mijn vrienden.</p>
+                            <span class="muzus-quote-author">Jongere &bull; Breda en Tilburg</span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- CONTACT SECTIE (Conform Wireframe: Links Info + Rechts Formulier) -->
+          <section class="contact-section" id="contact">
+            <div class="section-container">
+              <div class="section-heading-wrapper">
+                <h2 class="section-heading">CONTACT</h2>
+                <div class="section-heading-underline"></div>
+              </div>
+
+              <div class="contact-grid">
+                
+                <!-- Linker Kolom: Info & Socials -->
+                <div class="contact-info-card">
+                  <h3 style="font-family:var(--font-primary); font-size:1.75rem; color:var(--color-olive-dark); margin-bottom:12px;">
+                    Laten we Samenwerken!
+                  </h3>
+                  <p class="contact-intro-p">
+                    Heb je een tof idee voor een fotoshoot, wil je sparren over een UX/UI interface in Figma, of ben je benieuwd naar fysieke interactie en hardware prototypes? Stuur me gerust een berichtje!
+                  </p>
+
+                  <div class="contact-info-list">
+                    <div class="contact-info-row">
+                      <div class="contact-info-icon">👤</div>
+                      <div>
+                        <div class="contact-info-label">Ik</div>
+                        <div class="contact-info-val">Kyan Beer (20 jaar)</div>
+                      </div>
+                    </div>
+
+                    <div class="contact-info-row">
+                      <div class="contact-info-icon">🎓</div>
+                      <div>
+                        <div class="contact-info-label">Opleiding</div>
+                        <div class="contact-info-val">Communicatie en Multimedia Design (CMD) • Avans Hogeschool</div>
+                      </div>
+                    </div>
+
+                    <div class="contact-info-row">
+                      <div class="contact-info-icon">📸</div>
+                      <div>
+                        <div class="contact-info-label">Instagram</div>
+                        <div class="contact-info-val">
+                          <a href="https://instagram.com/kyanbeer" target="_blank" rel="noopener">@kyanbeer ↗</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="contact-info-row">
+
+                      <div>
+
+                        <div class="contact-info-val">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Rechter Kolom: Windows XP Dialoog Contactformulier -->
+                <div class="xp-form-window">
+                  <div class="xp-form-titlebar">
+                    <span>Contact Opnemen met Kyan</span>
+                  </div>
+                  <form class="xp-form-body" id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                      <label class="form-label" for="formName">Jouw Naam:</label>
+                      <input type="text" id="formName" class="xp-input" required placeholder="Bijv. Jan de Vries">
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="formEmail">E-mailadres:</label>
+                      <input type="email" id="formEmail" class="xp-input" required placeholder="naam@domein.nl">
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="formSubject">Onderwerp:</label>
+                      <select id="formSubject" class="xp-select">
+                        <option value="Fotoshoot / Fotografie">Fotoshoot / Fotografie op locatie</option>
+                        <option value="UX/UI & Webdesign in Figma">UX/UI & Webdesign in Figma</option>
+                        <option value="Fysiek Prototyping & Hardware">Fysieke Hardware & Arduino Controller</option>
+                        <option value="Stage / Samenwerking">Stage / Samenwerking</option>
+                        <option value="Overig">Overig</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="formMsg">Bericht:</label>
+                      <textarea id="formMsg" class="xp-textarea" required placeholder="Vertel kort over je idee of project..."></textarea>
+                    </div>
+
+                    <div class="form-submit-row">
+                      <button type="reset" class="xp-btn-dialog">Wissen</button>
+                      <button type="submit" class="xp-btn-dialog btn-submit-green">Verstuur Bericht ✉️</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- FOOTER -->
+          <footer class="site-footer">
+            <div class="footer-inner">
+              <div>
+                <strong>Kyan Beer</strong> • Student Communicatie & Multimedia Design
+              </div>
+              <div class="footer-credits">
+                Windows XP Edition • <a href="https://instagram.com/kyanbeer" target="_blank" rel="noopener">@kyanbeer</a>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================
+         WINDOWS XP TAAKBALK (TASKBAR)
+         ====================================================================== -->
+    <div class="xp-taskbar">
+      <!-- Groene XP Startknop -->
+      <button class="xp-start-btn" onclick="showStartMenu()">
+        <!-- Windows XP Vlag Icoon -->
+        <svg class="xp-start-flag" viewBox="0 0 24 24">
+          <path d="M2 4.5l8.5-1.5v8H2V4.5zm0 9.5h8.5v8L2 20.5V14zm9.5-6.5L22 2.5V11h-10.5V7.5zm0 6.5H22v8.5l-10.5-1.5V14z" fill="#FFFFFF"/>
+        </svg>
+        <span>start</span>
+      </button>
+
+      <!-- Lopende taken in de taakbalk -->
+      <div class="xp-taskbar-tasks">
+        <button class="xp-task-item is-active" id="taskbarItem" onclick="toggleMinimize()">
+          <span>🌐</span>
+          <span>Kyan Beer - Portfolio</span>
+        </button>
+      </div>
+
+      <!-- Systeemvak (Systray) -->
+      <div class="xp-systray">
+        <div class="systray-icons">
+          <!-- Geluid Icoon -->
+          <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+          <!-- Netwerk Icoon -->
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+        <div class="systray-clock" id="systrayClock">12:00</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ========================================================================
+       WINDOWS XP POP-UP / DIALOOGVENSTER (MODAL)
+       ======================================================================== -->
+  <div class="xp-modal-backdrop" id="xpDialogModal">
+    <div class="xp-dialog-box">
+      <div class="xp-dialog-titlebar">
+        <span id="xpDialogTitle">Bericht</span>
+        <button class="xp-btn-control xp-btn-close" style="width:18px; height:18px;" onclick="closeXpDialog()">×</button>
+      </div>
+      <div class="xp-dialog-body">
+        <!-- XP Info Bubble Icoon -->
+        <svg class="xp-dialog-icon" viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="22" fill="#2B7CE9" stroke="#0058EE" stroke-width="2"/>
+          <circle cx="24" cy="14" r="3.5" fill="#FFFFFF"/>
+          <rect x="21" y="20" width="6" height="15" rx="2" fill="#FFFFFF"/>
+        </svg>
+        <div>
+          <div class="xp-dialog-msg-title" id="xpDialogMsgTitle">Kennisgeving</div>
+          <div class="xp-dialog-msg-text" id="xpDialogMsgText">Berichtinhoud hier...</div>
+        </div>
+      </div>
+      <div class="xp-dialog-footer">
+        <button class="xp-btn-dialog btn-submit-green" onclick="closeXpDialog()">OK</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       LIGHTBOX MODAL VOOR AFBEELDINGEN & PROCESSEN
+       ======================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+    <button class="lightbox-close-btn" onclick="closeLightbox(event)">×</button>
+    <div class="lightbox-container" onclick="event.stopPropagation()">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
