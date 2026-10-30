@@ -226,23 +226,23 @@ function initScrollSpy() {
    ========================================================================== */
 const comparisonImages = {
   1: {
-    before: 'Images/Foto30.jpg',
-    after: 'Images/Foto29.jpg',
+    before: 'images/Foto30.jpg',
+    after: 'images/Foto29.jpg',
     aspectRatio: '509 / 759'
   },
   2: {
-    before: 'Images/Foto32.jpg',
-    after: 'Images/Foto31.jpg',
+    before: 'images/Foto32.jpg',
+    after: 'images/Foto31.jpg',
     aspectRatio: '540 / 812'
   },
   3: {
-    before: 'Images/Foto34.jpg',
-    after: 'Images/Foto33.jpg',
+    before: 'images/Foto34.jpg',
+    after: 'images/Foto33.jpg',
     aspectRatio: '607 / 401'
   },
   4: {
-    before: 'Images/Foto36.jpg',
-    after: 'Images/Foto35.jpg',
+    before: 'images/Foto36.jpg',
+    after: 'images/Foto35.jpg',
     aspectRatio: '549 / 829'
   }
 };
